@@ -37,11 +37,11 @@ android {
 
 dependencies {
     // ViewModel
-    implementation("androidx. lifecycle: lifecycle-viewmodel-ktx:2.3.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
     //livedata
-    implementation("androidx. lifecycle: lifecycle-livedata-ktx:2.3.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
     // Fragment
-    implementation("androidx. fragment:fragment-ktx:1.3.2")
+    implementation("androidx.fragment:fragment-ktx:1.3.2")
     // Activity
     implementation("androidx.activity:activity-ktx:1.2.2")
     implementation(libs.androidx.activity.ktx)
