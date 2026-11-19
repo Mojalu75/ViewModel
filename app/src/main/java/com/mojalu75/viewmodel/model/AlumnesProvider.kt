@@ -3,7 +3,7 @@ package com.mojalu75.viewmodel.model
 class AlumnesProvider {
     companion object {
         fun random(): AlumnesModel {
-            val position = (0..10).random()
+            val position = (0..5).random()
             return alumnes[position]
         }
 

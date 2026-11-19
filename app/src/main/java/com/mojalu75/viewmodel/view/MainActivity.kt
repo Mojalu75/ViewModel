@@ -24,13 +24,14 @@ class MainActivity : AppCompatActivity() {
             binding.tvAuthor.text = currentQuote.author
         })
 
-        binding.viewContainer.setOnClickListener { quoteViewModel.randomQuote()}
-
-
         alumnesViewModel.alumnesModel.observe(this, Observer{ currentAlumne->
             Toast.makeText(this,currentAlumne.nombre +
                     " edat : "+ currentAlumne.edat , Toast.LENGTH_SHORT).show()
         })
-        binding.viewContainer.setOnClickListener { alumnesViewModel.randomAlumne()}
+
+        binding.viewContainer.setOnClickListener {
+            quoteViewModel.randomQuote()
+            alumnesViewModel.randomAlumne()
+        }
     }
 }
